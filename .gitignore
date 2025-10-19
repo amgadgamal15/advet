@@ -1,0 +1,30 @@
+# PHP
+*.log
+*.cache
+.phpunit.cache/
+vendor/
+composer.phar
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+.DS_Store
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*~
+
+# Uploaded files (keep directory structure but ignore uploads)
+assets/images/products/*
+!assets/images/products/.gitkeep
+
+# Environment files
+.env
+.env.local
+
+# System files
+Thumbs.db
+.DS_Store
