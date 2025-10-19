@@ -34,7 +34,7 @@ unset($_SESSION['login_error']);
             <div class="alert alert-error"><?php echo $loginError; ?></div>
             <?php endif; ?>
             
-            <form action="auth.php" method="POST" class="login-form">
+            <form action="/auth.php" method="POST" class="login-form">
                 <div class="form-group">
                     <label><?php echo $trans['admin']['username']; ?></label>
                     <input type="text" name="username" required autofocus>
