@@ -28,7 +28,30 @@ $featuredProducts = array_slice($products, 0, 3);
             <div class="services-grid">
                 <?php foreach ($services as $service): ?>
                 <div class="service-card tilt-card fade-in-scroll">
-                    <div class="service-icon"><?php echo $service['icon'] === 'consult.svg' ? '🩺' : ($service['icon'] === 'delivery.svg' ? '🚚' : ($service['icon'] === 'quality.svg' ? '✅' : '📦')); ?></div>
+                    <div class="service-icon">
+                        <?php if ($service['icon'] === 'consult.svg'): ?>
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                            </svg>
+                        <?php elseif ($service['icon'] === 'delivery.svg'): ?>
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="1" y="3" width="15" height="13"></rect>
+                                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                            </svg>
+                        <?php elseif ($service['icon'] === 'quality.svg'): ?>
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        <?php else: ?>
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                            </svg>
+                        <?php endif; ?>
+                    </div>
                     <h3><?php echo $lang === 'ar' ? $service['title_ar'] : $service['title_en']; ?></h3>
                     <p><?php echo $lang === 'ar' ? $service['desc_ar'] : $service['desc_en']; ?></p>
                 </div>

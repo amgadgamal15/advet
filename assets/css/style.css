@@ -259,6 +259,22 @@ section {
 .service-icon {
     font-size: 3rem;
     margin-bottom: 1rem;
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-icon svg {
+    width: 48px;
+    height: 48px;
+    stroke: var(--primary);
+    transition: var(--transition);
+}
+
+.service-card:hover .service-icon svg {
+    stroke: var(--accent);
+    transform: scale(1.1);
 }
 
 .service-card h3 {
@@ -509,13 +525,22 @@ section {
 }
 
 .social-link {
-    padding: 0.75rem 1.25rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
     background: var(--bg-card);
-    border-radius: var(--radius-sm);
+    border-radius: 50%;
     text-decoration: none;
     color: var(--text-primary);
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
+}
+
+.social-link svg {
+    width: 20px;
+    height: 20px;
 }
 
 .social-link:hover {

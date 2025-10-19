@@ -29,6 +29,14 @@ foreach ($products as &$product) {
         $product['strength'] = sanitizeInput($_POST['strength'] ?? $product['strength']);
         $product['pack_size'] = sanitizeInput($_POST['pack_size'] ?? $product['pack_size']);
         $product['manufacturer'] = sanitizeInput($_POST['manufacturer'] ?? $product['manufacturer']);
+        
+        if (isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
+            $uploadResult = uploadImage($_FILES['image'], 'products');
+            if ($uploadResult['success']) {
+                $product['image'] = $uploadResult['filename'];
+            }
+        }
+        
         $found = true;
         break;
     }

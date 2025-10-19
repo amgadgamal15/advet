@@ -105,6 +105,12 @@ $products = getJsonData('products.json');
                         <input type="text" name="manufacturer" required>
                     </div>
                 </div>
+                <div class="form-group">
+                    <label>Product Image</label>
+                    <input type="file" id="productImage" name="image" accept="image/*">
+                    <small>Upload product image (JPG, PNG, WEBP - Max 5MB)</small>
+                    <div id="currentImagePreview" style="margin-top: 10px;"></div>
+                </div>
                 <div class="form-actions">
                     <button type="button" class="btn btn-outline" onclick="closeProductModal()"><?php echo $trans['admin']['cancel']; ?></button>
                     <button type="submit" class="btn btn-primary"><?php echo $trans['admin']['save']; ?></button>

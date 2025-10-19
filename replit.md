@@ -92,6 +92,11 @@ AdVet is a bilingual veterinary medicines quotation website built with plain PHP
 - **Accent**: Bright Teal (#66c2c2)
 
 ## Recent Changes
+- [2025-10-19] Fixed admin login form path issue (changed to /admin/auth.php)
+- [2025-10-19] Added product image upload/edit functionality in admin dashboard
+- [2025-10-19] Replaced emoji service icons with professional SVG icons on home page
+- [2025-10-19] Replaced emoji social media icons with SVG icons in footer (Facebook, Instagram, WhatsApp, LinkedIn)
+- [2025-10-19] Added security fix: rel="noopener noreferrer" to all social media links
 - [2025-10-19] Added professional stock images for all products with responsive CSS styling
 - [2025-10-19] Updated product display on home, products, and detail pages to show actual images
 - [2025-10-19] Added product detail page with full specifications and "More Like This" section

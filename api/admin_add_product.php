@@ -17,6 +17,14 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 
 $products = getJsonData('products.json');
 
+$imageName = 'placeholder.jpg';
+if (isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
+    $uploadResult = uploadImage($_FILES['image'], 'products');
+    if ($uploadResult['success']) {
+        $imageName = $uploadResult['filename'];
+    }
+}
+
 $newProduct = [
     'id' => generateId($products),
     'name_en' => sanitizeInput($_POST['name_en'] ?? ''),
@@ -27,7 +35,7 @@ $newProduct = [
     'strength' => sanitizeInput($_POST['strength'] ?? ''),
     'pack_size' => sanitizeInput($_POST['pack_size'] ?? ''),
     'manufacturer' => sanitizeInput($_POST['manufacturer'] ?? ''),
-    'image' => 'placeholder.jpg'
+    'image' => $imageName
 ];
 
 $products[] = $newProduct;

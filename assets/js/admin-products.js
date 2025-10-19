@@ -4,9 +4,11 @@ function showAddProduct() {
     const modal = document.getElementById('productModal');
     const form = document.getElementById('productForm');
     const title = document.getElementById('modalTitle');
+    const imagePreview = document.getElementById('currentImagePreview');
     
     form.reset();
     document.getElementById('productId').value = '';
+    imagePreview.innerHTML = '';
     title.textContent = 'Add Product';
     modal.classList.add('show');
 }
@@ -15,6 +17,7 @@ function editProduct(product) {
     const modal = document.getElementById('productModal');
     const form = document.getElementById('productForm');
     const title = document.getElementById('modalTitle');
+    const imagePreview = document.getElementById('currentImagePreview');
     
     document.getElementById('productId').value = product.id;
     form.querySelector('[name="name_en"]').value = product.name_en;
@@ -25,6 +28,15 @@ function editProduct(product) {
     form.querySelector('[name="strength"]').value = product.strength;
     form.querySelector('[name="pack_size"]').value = product.pack_size;
     form.querySelector('[name="manufacturer"]').value = product.manufacturer;
+    
+    if (product.image && product.image !== 'placeholder.jpg') {
+        imagePreview.innerHTML = `<div style="text-align: center;">
+            <p>Current Image:</p>
+            <img src="../assets/images/products/${product.image}" style="max-width: 200px; max-height: 200px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" alt="Current product image">
+        </div>`;
+    } else {
+        imagePreview.innerHTML = '';
+    }
     
     title.textContent = 'Edit Product';
     modal.classList.add('show');
@@ -92,6 +104,26 @@ document.addEventListener('DOMContentLoaded', function() {
             } catch (error) {
                 console.error('Error:', error);
                 alert('Network error. Please try again.');
+            }
+        });
+    }
+    
+    // Image preview on file select
+    const imageInput = document.getElementById('productImage');
+    if (imageInput) {
+        imageInput.addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            const preview = document.getElementById('currentImagePreview');
+            
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    preview.innerHTML = `<div style="text-align: center;">
+                        <p>New Image Preview:</p>
+                        <img src="${e.target.result}" style="max-width: 200px; max-height: 200px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" alt="New product image preview">
+                    </div>`;
+                };
+                reader.readAsDataURL(file);
             }
         });
     }

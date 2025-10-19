@@ -1,50 +1,50 @@
 [
-  {
-    "id": 1,
-    "name_en": "Ivermectin Injection",
-    "name_ar": "حقن إيفرمكتين",
-    "description_en": "Broad-spectrum antiparasitic for cattle and sheep. Effective against internal and external parasites.",
-    "description_ar": "دواء مضاد للطفيليات واسع الطيف للماشية والأغنام. فعال ضد الطفيليات الداخلية والخارجية.",
-    "category": "Antiparasitic",
-    "strength": "1%",
-    "pack_size": "50ml",
-    "manufacturer": "VetPharm",
-    "image": "ivermectin.jpg"
-  },
-  {
-    "id": 2,
-    "name_en": "Oxytetracycline LA",
-    "name_ar": "أوكسي تتراسيكلين طويل المفعول",
-    "description_en": "Long-acting antibiotic for treatment of respiratory and urinary infections in livestock.",
-    "description_ar": "مضاد حيوي طويل المفعول لعلاج التهابات الجهاز التنفسي والبولي في الماشية.",
-    "category": "Antibiotic",
-    "strength": "200mg/ml",
-    "pack_size": "100ml",
-    "manufacturer": "VetPharm",
-    "image": "oxytetracycline.jpg"
-  },
-  {
-    "id": 3,
-    "name_en": "Vitamin AD3E Injectable",
-    "name_ar": "فيتامين أ د3 هـ حقن",
-    "description_en": "Essential vitamins for growth, reproduction, and immunity enhancement in all animals.",
-    "description_ar": "فيتامينات أساسية للنمو والتكاثر وتعزيز المناعة في جميع الحيوانات.",
-    "category": "Vitamins",
-    "strength": "Mixed",
-    "pack_size": "100ml",
-    "manufacturer": "VetPharm",
-    "image": "vitamin.jpg"
-  },
-  {
-    "id": 4,
-    "name_en": "Albendazole Suspension",
-    "name_ar": "البيندازول معلق",
-    "description_en": "Oral anthelmintic for treatment of gastrointestinal worms in cattle, sheep, and goats.",
-    "description_ar": "طارد للديدان عن طريق الفم لعلاج ديدان الجهاز الهضمي في الأبقار والأغنام والماعز.",
-    "category": "Antiparasitic",
-    "strength": "10%",
-    "pack_size": "1L",
-    "manufacturer": "VetPharm",
-    "image": "albendazole.jpg"
-  }
+    {
+        "id": 1,
+        "name_en": "Ivermectin Injection",
+        "name_ar": "حقن إيفرمكتين",
+        "description_en": "Broad-spectrum antiparasitic for cattle and sheep. Effective against internal and external parasites.",
+        "description_ar": "دواء مضاد للطفيليات واسع الطيف للماشية والأغنام. فعال ضد الطفيليات الداخلية والخارجية.",
+        "category": "Antiparasitic",
+        "strength": "1%",
+        "pack_size": "50ml",
+        "manufacturer": "VetPharm",
+        "image": "68f4ca4265f95.png"
+    },
+    {
+        "id": 2,
+        "name_en": "Oxytetracycline LA",
+        "name_ar": "أوكسي تتراسيكلين طويل المفعول",
+        "description_en": "Long-acting antibiotic for treatment of respiratory and urinary infections in livestock.",
+        "description_ar": "مضاد حيوي طويل المفعول لعلاج التهابات الجهاز التنفسي والبولي في الماشية.",
+        "category": "Antibiotic",
+        "strength": "200mg\/ml",
+        "pack_size": "100ml",
+        "manufacturer": "VetPharm",
+        "image": "oxytetracycline.jpg"
+    },
+    {
+        "id": 3,
+        "name_en": "Vitamin AD3E Injectable",
+        "name_ar": "فيتامين أ د3 هـ حقن",
+        "description_en": "Essential vitamins for growth, reproduction, and immunity enhancement in all animals.",
+        "description_ar": "فيتامينات أساسية للنمو والتكاثر وتعزيز المناعة في جميع الحيوانات.",
+        "category": "Vitamins",
+        "strength": "Mixed",
+        "pack_size": "100ml",
+        "manufacturer": "VetPharm",
+        "image": "vitamin.jpg"
+    },
+    {
+        "id": 4,
+        "name_en": "Albendazole Suspension",
+        "name_ar": "البيندازول معلق",
+        "description_en": "Oral anthelmintic for treatment of gastrointestinal worms in cattle, sheep, and goats.",
+        "description_ar": "طارد للديدان عن طريق الفم لعلاج ديدان الجهاز الهضمي في الأبقار والأغنام والماعز.",
+        "category": "Antiparasitic",
+        "strength": "10%",
+        "pack_size": "1L",
+        "manufacturer": "VetPharm",
+        "image": "albendazole.jpg"
+    }
 ]
