@@ -42,7 +42,13 @@ require_once 'includes/navbar.php';
                 <!-- Product Image -->
                 <div class="product-detail-image fade-in-scroll">
                     <div class="detail-image-container">
-                        <div class="placeholder-image large">🧪</div>
+                        <?php if (!empty($product['image'])): ?>
+                            <img src="assets/images/products/<?php echo htmlspecialchars($product['image']); ?>" 
+                                 alt="<?php echo htmlspecialchars($lang === 'ar' ? $product['name_ar'] : $product['name_en']); ?>"
+                                 class="large-product-image">
+                        <?php else: ?>
+                            <div class="placeholder-image large">🧪</div>
+                        <?php endif; ?>
                     </div>
                 </div>
 
@@ -114,7 +120,12 @@ require_once 'includes/navbar.php';
                 <?php foreach ($relatedProducts as $relatedProduct): ?>
                 <div class="product-card fade-in-scroll">
                     <div class="product-image">
-                        <div class="placeholder-image">🧪</div>
+                        <?php if (!empty($relatedProduct['image'])): ?>
+                            <img src="assets/images/products/<?php echo htmlspecialchars($relatedProduct['image']); ?>" 
+                                 alt="<?php echo htmlspecialchars($lang === 'ar' ? $relatedProduct['name_ar'] : $relatedProduct['name_en']); ?>">
+                        <?php else: ?>
+                            <div class="placeholder-image">🧪</div>
+                        <?php endif; ?>
                     </div>
                     <div class="product-info">
                         <h3>

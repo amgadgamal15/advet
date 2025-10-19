@@ -35,7 +35,12 @@ $categories = array_unique(array_column($products, 'category'));
                 <?php foreach ($products as $product): ?>
                 <div class="product-card fade-in-scroll" data-category="<?php echo $product['category']; ?>" data-name="<?php echo strtolower($product['name_en'] . ' ' . $product['name_ar']); ?>">
                     <div class="product-image">
-                        <div class="placeholder-image">🧪</div>
+                        <?php if (!empty($product['image'])): ?>
+                            <img src="assets/images/products/<?php echo htmlspecialchars($product['image']); ?>" 
+                                 alt="<?php echo htmlspecialchars($lang === 'ar' ? $product['name_ar'] : $product['name_en']); ?>">
+                        <?php else: ?>
+                            <div class="placeholder-image">🧪</div>
+                        <?php endif; ?>
                     </div>
                     <div class="product-info">
                         <h3>

@@ -45,7 +45,12 @@ $featuredProducts = array_slice($products, 0, 3);
                 <?php foreach ($featuredProducts as $product): ?>
                 <div class="product-card fade-in-scroll">
                     <div class="product-image">
-                        <div class="placeholder-image">🧪</div>
+                        <?php if (!empty($product['image'])): ?>
+                            <img src="assets/images/products/<?php echo htmlspecialchars($product['image']); ?>" 
+                                 alt="<?php echo htmlspecialchars($lang === 'ar' ? $product['name_ar'] : $product['name_en']); ?>">
+                        <?php else: ?>
+                            <div class="placeholder-image">🧪</div>
+                        <?php endif; ?>
                     </div>
                     <div class="product-info">
                         <h3>
