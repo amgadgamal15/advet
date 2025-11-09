@@ -58,25 +58,25 @@ $unreadMessages = count(array_filter($messages, function($msg) {
         </div>
         
         <div class="dashboard-actions">
-            <a href="admin/products.php" class="action-card">
+            <a href="products.php" class="action-card">
                 <div class="action-icon">📦</div>
                 <h3><?php echo $trans['admin']['products']; ?></h3>
                 <p>Manage veterinary products</p>
             </a>
             
-            <a href="admin/quotations.php" class="action-card">
+            <a href="quotations.php" class="action-card">
                 <div class="action-icon">📋</div>
                 <h3><?php echo $trans['admin']['quotations']; ?></h3>
                 <p>View quotation requests</p>
             </a>
             
-            <a href="admin/messages.php" class="action-card">
+            <a href="messages.php" class="action-card">
                 <div class="action-icon">✉️</div>
                 <h3><?php echo $trans['admin']['messages']; ?></h3>
                 <p>Read contact messages</p>
             </a>
             
-            <a href="admin/settings.php" class="action-card">
+            <a href="settings.php" class="action-card">
                 <div class="action-icon">⚙️</div>
                 <h3><?php echo $trans['admin']['settings']; ?></h3>
                 <p>Update company info</p>

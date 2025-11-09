@@ -1,1 +1,15 @@
-[]
+[
+    {
+        "id": 1,
+        "date": "2025-10-19 12:11:45",
+        "customer": {
+            "name": "asdasd",
+            "email": "asda@gmail.com",
+            "phone": "asdadsads"
+        },
+        "product_id": 5,
+        "quantity": 1,
+        "notes": "dsadasd",
+        "status": "new"
+    }
+]

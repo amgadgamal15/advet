@@ -56,7 +56,7 @@ async function deleteProduct(id) {
     formData.append('id', id);
     
     try {
-        const response = await fetch('/api/admin_delete_product.php', {
+        const response = await fetch('/dev/api/admin_delete_product.php', {
             method: 'POST',
             body: formData
         });
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const formData = new FormData(this);
             const productId = document.getElementById('productId').value;
             
-            const endpoint = productId ? '/api/admin_edit_product.php' : '/api/admin_add_product.php';
+            const endpoint = productId ? '/dev/api/admin_edit_product.php' : '/dev/api/admin_add_product.php';
             
             try {
                 const response = await fetch(endpoint, {

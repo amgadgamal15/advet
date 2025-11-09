@@ -1,13 +1,5 @@
 [
   {
-    "id": 1,
-    "title_en": "Veterinary Consultation",
-    "title_ar": "استشارة بيطرية",
-    "desc_en": "Professional advice for animal care and medicine usage from experienced veterinarians.",
-    "desc_ar": "نصائح مهنية للعناية بالحيوانات واستخدام الأدوية من أطباء بيطريين ذوي خبرة.",
-    "icon": "consult.svg"
-  },
-  {
     "id": 2,
     "title_en": "Fast Delivery",
     "title_ar": "توصيل سريع",

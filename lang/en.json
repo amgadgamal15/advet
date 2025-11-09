@@ -44,6 +44,10 @@
     "expertise": "Veterinary Expertise",
     "expertise_desc": "Our team includes experienced veterinary professionals ready to assist you."
   },
+  "custom": {
+    "enlight_title": "We Enlight Your Veterinary Journey",
+    "enlight_subtitle": "Trusted Veterinary Medicines for Healthy Animals"
+  },
   "contact": {
     "title": "Contact Us",
     "subtitle": "Get in touch with our team",

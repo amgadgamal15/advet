@@ -17,6 +17,10 @@
     "contact_cta_desc": "فريقنا مستعد لمساعدتك في معلومات المنتجات وعروض الأسعار.",
     "contact_cta_button": "اتصل بنا"
   },
+  "custom": {
+    "enlight_title": "نحن نوضح مسيرتك البيطرية",
+    "enlight_subtitle": "أدوية بيطرية موثوقة لحيوانات أكثر صحة"
+  },
   "products": {
     "title": "منتجاتنا",
     "search_placeholder": "ابحث عن المنتجات...",

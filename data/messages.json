@@ -1,1 +1,20 @@
-[]
+[
+    {
+        "id": 1,
+        "date": "2025-10-19 12:12:03",
+        "name": "amgood",
+        "email": "alksdj@gmail.com",
+        "phone": "9238429",
+        "message": "heeelllooo",
+        "read": false
+    },
+    {
+        "id": 2,
+        "date": "2025-11-07 13:30:22",
+        "name": "ahmed Mohammed",
+        "email": "ab_sm323@hotmail.com",
+        "phone": "0500000000000",
+        "message": "000000",
+        "read": false
+    }
+]

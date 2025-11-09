@@ -46,5 +46,17 @@
         "pack_size": "1L",
         "manufacturer": "VetPharm",
         "image": "albendazole.jpg"
+    },
+    {
+        "id": 5,
+        "name_en": "asd",
+        "name_ar": "asd",
+        "description_en": "sadasds",
+        "description_ar": "sasd",
+        "category": "asdad",
+        "strength": "sada",
+        "pack_size": "asd",
+        "manufacturer": "asd",
+        "image": "68f4d4bb63a2c.png"
     }
 ]

@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const formData = new FormData(this);
             
             try {
-                const response = await fetch('/api/quotation_submit.php', {
+                const response = await fetch('/dev/api/quotation_submit.php', {
                     method: 'POST',
                     body: formData
                 });
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const formData = new FormData(this);
             
             try {
-                const response = await fetch('/api/contact_submit.php', {
+                const response = await fetch('/dev/api/contact_submit.php', {
                     method: 'POST',
                     body: formData
                 });
